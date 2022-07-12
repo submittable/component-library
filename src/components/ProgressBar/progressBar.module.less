@@ -1,0 +1,28 @@
+.textContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: @base-margin * 0.5;
+
+    .midpointValue {
+        .flexAndCenter;
+    }
+
+    .goalValue {
+        .flexAndCenter;
+        justify-content: flex-end;
+    }
+}
+
+.progress {
+    height: 10px;
+    border-radius: @base-border-radius;
+}
+
+.barFilled {
+    background-color: @primary;
+    border-radius: @base-border-radius;
+}
+
+.barEmpty {
+    background-color: @grey-300;
+}

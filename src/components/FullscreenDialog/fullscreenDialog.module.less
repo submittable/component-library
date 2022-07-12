@@ -1,0 +1,38 @@
+
+
+
+.dialog {
+    min-width: 570px;
+    .gridWithGap(@base-grid-gap * 2);
+    padding: @base-padding * 2;
+}
+
+.dialogTitle {
+    .h1;
+    .flexAndCenter;
+
+    & .hasCloseButton {
+        justify-content: space-between;
+    }
+}
+
+.titleContainer {
+    .flexAndCenter;
+    flex-direction: column;
+    gap: (@base-gap / 2);
+}
+
+.dialogBody {
+    .gridWithGap(@base-grid-gap * 2);
+    justify-items: center;
+}
+
+.loadingContainer {
+    width: 100%;
+    .flexAndCenter();
+    padding: 0;
+}
+
+// .spacer {
+//     width: 48px;
+// }

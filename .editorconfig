@@ -1,0 +1,21 @@
+root = true
+
+[*]
+# end_of_line is handled automatically by git. See .gitattributes
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{cs,cshtml,sql,js,htm,html,css,less,mdx}]
+charset = utf-8
+
+[*.{cs,cshtml,sql,htm,html,css,less}]
+indent_style = space
+indent_size = 4
+
+[*.{sitemap,js,mdx}]
+indent_style = space
+indent_size = 2
+
+[{package.json}]
+indent_style = space
+indent_size = 2

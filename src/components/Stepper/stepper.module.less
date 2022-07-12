@@ -1,0 +1,56 @@
+
+
+
+.container {
+    display: grid;
+    gap: @base-grid-gap;
+    margin: @base-margin * 2;
+    margin-top: @base-margin;
+}
+
+.stepText {
+    text-align: center;
+    .headline200();
+    color: @grey-700;
+}
+
+.stepper {
+    background-color: transparent;
+    justify-content: center;
+}
+
+//For custom stepper
+.stepIcon {
+    background-color: @white;
+    height: 8px;
+    width: 48px;
+    border: @base-border;
+    border-radius: @base-border-radius;
+
+    &.active,
+    &.completed {
+        background-color: @primary;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media @mobile {
+    .container {
+        display: none;
+    }
+}
+
+//For basic stepper
+.root {
+    border-radius: 50%;
+
+    &.completed {
+        color: @success;
+    }
+    &.error {
+        color: @error;
+    }
+}

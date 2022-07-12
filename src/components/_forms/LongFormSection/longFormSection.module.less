@@ -1,0 +1,42 @@
+.formSection {
+    .gridWithGap(@base-grid-gap);
+    padding-bottom: (@base-padding * 3);
+
+    .headingContainer {
+        width: 100%;
+        .flexAndCenter;
+        justify-content: space-between;
+
+        .optionalText {
+            color: @grey-600;
+            .p200;
+        }
+
+        .button {
+            height: min-content;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &.collapsible:hover {
+            width: calc(100% + (@base-padding * 2));
+            padding: @base-padding;
+            margin: -@base-padding;
+            background-color: @grey-200;
+            border-radius: @base-border-radius;
+            cursor: pointer;
+        }
+    }
+
+    .fields {
+        display: inherit;
+        grid-gap: inherit;
+        margin-top: @base-margin;
+
+        .isCollapsed {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.row {
+    height: @table-row-height;
+
+    &:focus-visible {
+        border: 2px solid @blue-900;
+        border-radius: @base-border-radius;
+    }
+
+    & td {
+        color: @grey-700;
+        vertical-align: middle;
+    }
+
+    & td:first-child {
+        color: @grey-900;
+    }
+}
+
+.buttonsCell {
+    text-align: right;
+
+    & * {
+        margin: 2px;
+    }
+}

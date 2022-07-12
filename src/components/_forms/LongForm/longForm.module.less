@@ -1,0 +1,95 @@
+.container {
+    height: calc(100vh - (@navbar-height));
+    .gridWithGap(@base-grid-gap);
+    justify-content: start;
+    grid-template-columns: 1fr 3fr;
+
+    @media @mobile {
+        justify-content: unset;
+        grid-template-columns: auto;
+    }
+}
+
+.sidebar {
+    background-color: @grey-300;
+    padding: @base-padding;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.stepper {
+    justify-content: flex-end;
+}
+
+.content {
+    .gridWithGap(@base-grid-gap * 2);
+    grid-template-columns: 2fr 1fr;
+    padding: (@base-padding * 2) (@base-padding * 4);
+    overflow-y: scroll;
+    overscroll-behavior-y: none;
+
+    .contentContainer {
+        justify-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media @mobile {
+        grid-template-columns: unset;
+    }
+}
+
+.title {
+    padding-bottom: (@base-padding * 2);
+    margin-bottom: (@base-margin * 2);
+    border-bottom: @base-border;
+}
+
+.actionBar {
+    height: @navbar-height;
+    background-color: @navbar-color;
+    .flexAndCenter;
+    z-index: 1;
+}
+
+.banner {
+    margin-bottom: (@base-margin * 2);
+}
+
+.buttons {
+    display: flex;
+    gap: (@base-gap / 2);
+    justify-content: space-between;
+}
+
+.rightButtons {
+    display: flex;
+    gap: (@base-gap / 2);
+    margin-left: auto;
+}
+
+.exitButton {
+    color: @white;
+}
+
+.previewButton {
+    color: @white;
+    border-color: @white;
+
+    &:hover {
+        color: @black;
+        background-color: @white;
+        border-color: @white;
+    }
+}
+
+.previewDialog {
+    background-color: @grey-100;
+}
+
+.section {
+    .gridWithGap(@base-grid-gap * 2);
+    padding: 0;
+}

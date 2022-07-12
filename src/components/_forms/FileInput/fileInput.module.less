@@ -1,0 +1,38 @@
+
+
+
+.container {
+    border: @base-dashed-border;
+    padding: (@base-padding * 2);
+    .flexAndCenter;
+    flex-direction: column;
+}
+
+.fileContainer {
+    .flexAndCenter;
+    justify-content: space-between;
+}
+
+.label {
+    .p200;
+    background: @grey-300;
+    padding: 8px 22px;
+    border-radius: @base-border-radius;
+
+    &:hover {
+        background: @grey-400;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.input {
+    font-family: inherit;
+    .p;
+
+    &::file-selector-button {
+        .hidden;
+    }
+}

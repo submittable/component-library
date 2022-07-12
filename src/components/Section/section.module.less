@@ -1,0 +1,33 @@
+
+
+
+.sectionWidth {
+    width: 100%;
+}
+
+.container {
+    .gridWithGap(@base-grid-gap);
+    padding: (@base-padding * 4) (@base-padding * 2);
+}
+
+.backgroundWhite {
+    .whiteBackground;
+}
+
+.backgroundPrimary {
+    .primaryBackground;
+}
+
+.backgroundSecondary {
+    .secondaryBackground;
+}
+
+.backgroundImage {
+    position: relative;
+}
+
+@media @mobile {
+    .container {
+        padding: 5%;
+    }
+}

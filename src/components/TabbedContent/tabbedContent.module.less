@@ -1,0 +1,43 @@
+.tabsContainer {
+    border-bottom: @base-border;
+    margin-bottom: (@base-margin * 2);
+
+    &.vertical {
+        border: none;
+    }
+}
+
+.verticalTabs {
+    .gridWithGap(@base-grid-gap);
+    grid-template-columns: 200px 1fr;
+    grid-auto-flow: column;
+}
+
+.tab {
+    text-transform: none;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    border-radius: @base-border-radius @base-border-radius 0px 0px;
+
+    &.active {
+        background-color: @grey-200;
+        color: unset;
+    }
+
+    &.vertical {
+        border-radius: @base-border-radius 0px 0px @base-border-radius;
+        align-items: flex-end;
+    }
+}
+
+.tabHeading {
+    .p;
+}
+
+.indicator {
+    background-color: @primary;
+
+    &.vertical {
+        width: 4px;
+    }
+}

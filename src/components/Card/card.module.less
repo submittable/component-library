@@ -1,0 +1,40 @@
+
+
+.card {
+    color: @black;
+    background: @white;
+    border-radius: @base-border-radius;
+    padding: @base-padding;
+    box-shadow: none;
+}
+
+.elevation {
+    box-shadow: @base-box-shadow;
+}
+
+.border {
+    border: @base-border;
+}
+
+.buttonWrapper {
+    font: inherit;
+    text-align: left;
+    border: none;
+    padding: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media @mobile {
+    .card {
+        width: 100%;
+    }
+    .buttonWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

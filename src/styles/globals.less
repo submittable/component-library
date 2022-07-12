@@ -1,0 +1,79 @@
+@import (reference) '../styles/variables.module.less';
+@import (reference) '../styles/mixins.module.less';
+
+html,
+body {
+    height: 100%;
+    background-color: @grey-100;
+    padding: 0;
+    margin: 0;
+    color: @font-color;
+    font-family: @font-family-1, @font-family-2, sans-serif;
+    font-style: normal;
+    font-size: 62.5%;
+}
+
+div#__next {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+h1 {
+    .h1;
+}
+
+h2 {
+    .h2;
+}
+
+h3 {
+    .h3;
+}
+
+h4 {
+    .h4;
+}
+
+h5 {
+    .h5;
+}
+
+h6 {
+    .h6;
+}
+
+p {
+    .p;
+}
+
+strong {
+    .strong;
+}
+
+a {
+    color: @link-color;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-decoration: none;
+}
+
+// Highcharts global styling
+.highcharts-root {
+    text {
+        font-family: @font-family-1, @font-family-2;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
