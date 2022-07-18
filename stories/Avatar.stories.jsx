@@ -18,7 +18,7 @@ export default {
 export const AvatarComponent = (args) => {
   return (
     <>
-      <p>Avatar with firstName and lastName props</p>
+      <p>Avatar with firstName and lastName props:</p>
       <Avatar {...args} firstName="Jane" lastName="Doe" />
       <br />
       <Divider />

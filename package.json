@@ -50,10 +50,10 @@
     "webpack": "^5.51.1"
   },
   "peerDependencies": {
+    "lodash": "^4.17.21",
     "moment": "2.29.1",
     "moment-timezone": "0.5.33",
-    "uuid": "8.3.2",
-    "lodash": "^4.17.21"
+    "uuid": "8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
