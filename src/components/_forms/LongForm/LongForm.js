@@ -25,8 +25,10 @@ const LongForm = ({
 
   // set up scroll spy to update navigation as user scrolls
   useEffect(() => {
+    // eslint-disable-next-line no-undef
     const contentEl = document.getElementById(CONTENT_ELEMENT_ID)
 
+    // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -38,6 +40,7 @@ const LongForm = ({
       { root: contentEl, threshold: 1 }
     )
 
+    // eslint-disable-next-line no-undef
     document
       .querySelectorAll(`#${FORM_SECTION_ELEMENT_ID}`)
       .forEach((sectionEl) => observer.observe(sectionEl))
