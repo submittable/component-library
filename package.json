@@ -40,7 +40,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
-    "husky": "^7.0.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "3.0.0",
     "jest": "28.0.3",
     "jest-environment-jsdom": "28.0.2",
@@ -62,7 +62,9 @@
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -o docs-build",
-    "commit": "cz"
+    "cm": "cz",
+    "prepare": "husky install",
+    "lint": "eslint 'src/**/*.js?(x)'"
   },
   "browserslist": {
     "production": [
